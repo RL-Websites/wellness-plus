@@ -1,0 +1,37 @@
+---
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+		<link rel="stylesheet" href="assets/favicon.svg" />
+		<link
+			rel="stylesheet"
+			href="assets/vendors/swiper/package/swiper-bundle.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="assets/vendors/bootstrap/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="assets/icons/style.css" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<slot />
+		<!-- =====|| All JS Integration Start Here ||===== -->
+		<script src="assets/js/vendors/jquery.3.3.1.js" defer></script>
+		<script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js" defer
+		></script>
+
+		<script src="assets/vendors/swiper/package/swiper-bundle.min.js" defer
+		></script>
+		<script src="assets/js/main.js" defer></script>
+		<!-- =====|| All JS Integration End Here ||===== -->
+	</body>
+</html>
