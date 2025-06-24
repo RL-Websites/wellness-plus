@@ -1,0 +1,91 @@
+.site {
+  &__footer {
+    &--top {
+      padding: 120px 0;
+      background: linear-gradient(180deg, #F7F7F7 20.97%, #FFECDB 85.95%);
+    }
+
+    &__contact {
+      li {
+        a {
+          color: $dark;
+          font-size: $fs-20;
+          font-weight: $fw-600;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      &--icon {
+        width: 40px;
+        height: 40px;
+        background-color: $secondary;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+
+    &__menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 30px;
+
+      li {
+        a {
+          text-decoration: none;
+          font-weight: 500;
+          color: $dark;
+        }
+      }
+    }
+
+    &__social {
+      display: flex;
+      gap: 24px;
+
+      li {
+        a {
+          font-size: $fs-36;
+          color: $primary;
+        }
+      }
+    }
+
+    &__top-scroller {
+      background: url(../img/frame/ellipse.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: inline-block;
+      width: 160px;
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      text-align: center;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    &--bottom {
+      padding: 18px 0;
+      background-color: $secondary;
+      color: $white;
+      text-align: center;
+
+      p {
+        font-size: $fs-16;
+        font-weight: $fw-400;
+        margin: 0;
+      }
+    }
+  }
+}

@@ -10,44 +10,30 @@ import Layout from "../layouts/Layout.astro";
 	<!--=====|| Main Section Start ||=====-->
 	<main class="page">
 		<!--===|| Banner Section Start ||===-->
-		<div
-			id="carouselExampleControls"
-			class="carousel slide"
-			data-bs-ride="carousel"
-		>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="..." class="d-block w-100" alt="..." />
+		<section class="home-banner">
+			<div class="container">
+				<div class="home-banner__content">
+					<h1 class="section-title__lg"
+						>Ready to <span class="text-primary">Significantly Boost</span> Your
+						Revenue?</h1
+					>
+					<p
+						>Integrate in-demand prescription wellness treatments, including
+						cutting-edge weight loss solutions, to expand your services and
+						attract more high-value clients to your med spa or gym.</p
+					>
 				</div>
-				<div class="carousel-item">
-					<img src="..." class="d-block w-100" alt="..." />
+				<div class="home-banner__img">
+					<img src="assets/img/banner.png" alt="Home Banner" />
 				</div>
-				<div class="carousel-item">
-					<img src="..." class="d-block w-100" alt="..." />
+				<div class="home-banner__action">
+					<button class="theme-btn theme-btn__secondary">Request a Demo</button>
 				</div>
 			</div>
-			<button
-				class="carousel-control-prev"
-				type="button"
-				data-bs-target="#carouselExampleControls"
-				data-bs-slide="prev"
-			>
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button
-				class="carousel-control-next"
-				type="button"
-				data-bs-target="#carouselExampleControls"
-				data-bs-slide="next"
-			>
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
-		</div>
-		<!--===|| Banner Section End ||===-->
-	</main>
-	<!--=====|| Main Section End ||=====-->
+			<!--===|| Banner Section End ||===-->
+		</section>
+		<!--=====|| Main Section End ||=====-->
 
-	<Footer />
+		<Footer />
+	</main>
 </Layout>

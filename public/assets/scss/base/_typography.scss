@@ -11,3 +11,29 @@ h6 {
 p {
 	font-family: "Poppins", sans-serif;
 }
+
+.section-title {
+	&__xl {
+		font-size: $fs-60;
+		line-height: 1.5;
+		font-weight: $fw-700;
+	}
+
+	&__lg {
+		font-size: $fs-50;
+		line-height: 1.3;
+		font-weight: $fw-700;
+	}
+
+	&__md {
+		font-size: $fs-40;
+		line-height: 1.5;
+		font-weight: $fw-700;
+	}
+
+	&__sm {
+		font-size: $fs-32;
+		line-height: 1.2;
+		font-weight: $fw-600;
+	}
+}
