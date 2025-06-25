@@ -58,11 +58,11 @@ p {
   color: #FF8800 !important;
 }
 
-.bg-light {
+.bg-light-1 {
   background-color: #F7F7F7 !important;
 }
 
-.text-light {
+.text-light-1 {
   color: #F7F7F7 !important;
 }
 
@@ -4317,6 +4317,22 @@ ul li a:hover, ul li a:focus {
 }
 .home-banner__action {
   margin-top: -180px;
+}
+
+.client {
+  padding: 80px 0;
+  background: linear-gradient(260.39deg, rgba(104, 72, 255, 0) -20.49%, #6848FF 55.93%);
+  text-align: center;
+}
+.client__items {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.client__item img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
