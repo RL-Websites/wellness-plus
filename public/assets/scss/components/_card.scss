@@ -1,0 +1,29 @@
+.common-card {
+  padding: 40px;
+  background: linear-gradient(124.65deg, rgba(255, 255, 255, 0.2) 3.21%, #FFFFFF 94.92%);
+  border-radius: 20px;
+  box-shadow: 0px 4px 56px 0px #6848FF0F;
+  backdrop-filter: blur(8px);
+  text-align: center;
+
+  &__list {
+    &__item {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &__icon {
+      font-size: 120px;
+      line-height: .4;
+
+      color: $primary;
+    }
+  }
+}

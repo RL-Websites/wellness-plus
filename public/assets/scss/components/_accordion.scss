@@ -1,0 +1,43 @@
+.accordion {
+  background-color: transparent;
+
+  &__wrapper {
+    padding: 30px;
+    border-radius: 16px;
+    background-color: $light-1;
+  }
+
+  &-item {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #c3c3c3;
+    border-radius: 0;
+
+    &__last {
+      border-bottom-right-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      border: 0;
+    }
+  }
+
+  &-button {
+
+    box-shadow: none !important;
+    background-color: transparent !important;
+    font-size: $fs-22;
+    font-weight: 700;
+    color: $dark !important;
+    padding: 32px 0 !important;
+
+  }
+
+  &-header {
+    padding: 0 !important;
+  }
+
+  &-body {
+    padding: 0 0 30px !important;
+  }
+
+
+}

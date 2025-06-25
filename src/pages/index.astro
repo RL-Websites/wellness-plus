@@ -1,4 +1,6 @@
 ---
+import Accordion from "../components/Accordion.astro";
+import ContactForm from "../components/ContactForm.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
@@ -33,7 +35,7 @@ import Layout from "../layouts/Layout.astro";
 		</section>
 		<!--===|| Banner Section End ||===-->
 
-		<!--===|| Client Section End ||===-->
+		<!--===|| Client Section Start ||===-->
 		<section class="client">
 			<div class="container">
 				<h1 class="section-title__xl text-white"
@@ -62,7 +64,550 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 		</section>
 		<!--===|| Client Section End ||===-->
+
+		<!--===|| Highlight Section Start ||===-->
+		<section class="highlight">
+			<div class="container">
+				<h1 class="section-title__xl text-dark text-center"
+					>Platform <span class="text-primary">Highlights</span>
+				</h1>
+				<p class="fs-lg-22 fs-md-18 fs-sm-16 fs-14 text-dark text-center m-0"
+					>We handle the backend — you grow your business.
+				</p>
+
+				<div class="row mt-30">
+					<div class="col-md-6">
+						<div class="common-card">
+							<h3 class="section-title__md"
+								>🚀 What We <span class="text-primary">Provide</span>
+							</h3>
+							<p class="fs-20 mt-20">Licensed doctors </p>
+							<p class="fs-20">Customer Engagement </p>
+							<p class="fs-20">503A Pharmacy Fulfillment </p>
+							<p class="fs-20">HIPAA-compliant platform </p>
+							<p class="fs-20">Revenue-sharing model </p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="common-card">
+							<h3 class="section-title__md"
+								>🎁 What You <span class="text-primary">Get</span>
+							</h3>
+							<p class="fs-20 mt-20"
+								>Prescription approvals in all 50 states
+							</p>
+							<p class="fs-20">No medical liability for your team </p>
+							<p class="fs-20">Direct-to-patient shipping </p>
+							<p class="fs-20">All data secured & insured</p>
+							<p class="fs-20">Revenues on all orders & refills </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--===|| Highlight Section End ||===-->
+
+		<!--===|| Why Works Section Start ||===-->
+		<section class="why-works">
+			<div class="container">
+				<h1 class="section-title__xl text-center"
+					>Why It Works for Gyms, <br /> Med Spas & <span class="text-primary"
+						>Wellness Businesses</span
+					>
+				</h1>
+				<div class="row mt-100">
+					<div class="col-md-6">
+						<div class="why-works__item">
+							<p class="why-works__num">01</p>
+							<h5 class="fs-28 fw-600">Attract More Clients</h5>
+							<p class="fs-18 fw-500 mt-3"
+								>Offer in-demand, science-backed wellness solutions that drive
+								real results.</p
+							>
+						</div>
+						<div class="why-works__item mt-40">
+							<p class="why-works__num">02</p>
+							<h5 class="fs-28 fw-600">Fully Scalable</h5>
+							<p class="fs-18 fw-500 mt-3"
+								>No need to hire extra staff or maintain inventory. Our turnkey
+								system grows with your business.</p
+							>
+						</div>
+						<div class="why-works__item mt-40">
+							<p class="why-works__num">03</p>
+							<h5 class="fs-28 fw-600">Nationwide Coverage</h5>
+							<p class="fs-18 fw-500 mt-3"
+								>Serve clients in all 50 states with our licensed medical and
+								pharmacy partners.</p
+							>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="why-works__item">
+							<p class="why-works__num">04</p>
+							<h5 class="fs-28 fw-600">Secure & Compliant</h5>
+							<p class="fs-18 fw-500 mt-3"
+								>Every step is HIPAA-compliant and doctor-guided for safety and
+								trust.</p
+							>
+						</div>
+						<div class="why-works__item mt-40">
+							<p class="why-works__num">05</p>
+							<h5 class="fs-28 fw-600">Done-For-You Model</h5>
+							<p class="fs-18 fw-500 mt-3"
+								>We handle the logistics, compliance, and fulfillment — so you
+								stay focused on your clients.</p
+							>
+						</div>
+						<div class="why-works__item mt-40">
+							<p class="why-works__num">06</p>
+							<h5 class="fs-28 fw-600">Increase Your Revenue</h5>
+							<p class="fs-18 fw-500 mt-3"
+								>Add a high-margin wellness offering to your business and retain
+								profits from every program sold.</p
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--===|| Why Works Section End ||===-->
+
+		<!--===|| Treatment Section Start ||===-->
+		<section class="treatment">
+			<div class="container">
+				<h1 class="section-title__xl text-dark text-center"
+					>Treatments <span class="text-primary"> Offered</span>
+				</h1>
+				<div class="treatment__wrapper">
+					<div class="row mt-30 g-4">
+						<div class="col-sm-6">
+							<div class="common-card">
+								<h5 class="fs-md-24 fs-20 lh-base fw-700"
+									><span class="text-primary">GLP-1 Medical</span>
+									<br /> Weight Loss
+								</h5>
+								<p class="mt-2 fs-md-18 fs-16"
+									>Semaglutide (Injection or Oral) <br /> Tirzepatide (Injection
+									or Oral)
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="common-card">
+								<h5 class="fs-md-24 fs-20 lh-base fw-700"
+									><span class="text-primary">Therapeutic</span>
+									<br /> Peptides
+								</h5>
+								<p class="mt-2 fs-md-18 fs-16"
+									>Recovery, fat metabolism, <br /> anti-aging, mood, sleep
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="common-card">
+								<h5 class="fs-md-24 fs-20 lh-base fw-700"
+									><span class="text-primary">NAD+ </span>
+									<br /> Therapy
+								</h5>
+								<p class="mt-2 fs-md-18 fs-16"
+									>Energy, focus, cellular repair, <br /> anti-aging
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="common-card">
+								<h5 class="fs-md-24 fs-20 lh-base fw-700"
+									><span class="text-primary">Men’s Health </span>
+									<br /> Stack
+								</h5>
+								<p class="mt-2 fs-md-18 fs-16"
+									>Enclomiphene, DHEA, <br /> Pregnenolone, Boron
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="treatment__img">
+							<img src="assets/img/specialist.png" alt="Treatment specialist" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--===|| Treatment Section End ||===-->
+
+		<!--===|| Info Section Start ||===-->
+		<section class="info">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="info__img">
+							<img src="assets/img/gym-center.jpg" alt="Info" />
+						</div>
+					</div>
+					<div class="col-md-5">
+						<h1 class="section-title__xl text-dark"
+							>Who <span class="text-primary"> Its For</span>
+						</h1>
+						<p class="fs-28 fw-600">Wellness Plus is perfect for: </p>
+						<p class="fs-md-18 fs-16">Gyms & Fitness Studios</p>
+						<p class="fs-md-18 fs-16">Medical SPAs & Aesthetic Clinics</p>
+						<p class="fs-md-18 fs-16">Cryotherapy & IV Therapy Centers</p>
+						<p class="fs-md-18 fs-16">Weight Loss Clinics </p>
+						<p class="fs-md-18 fs-16">Functional or Concierge Practices </p>
+					</div>
+				</div>
+				<div class="row mt-120">
+					<div class="col-md-6">
+						<h1 class="section-title__xl text-dark"
+							>Earning <span class="text-primary"> Potential</span>
+						</h1>
+						<div class="info__text mt-20">
+							<p class="fs-28 fw-600 mb-0">Earn Per Order</p>
+							<p class="fs-md-18 fs-16"
+								>Keep the full profit from every treatment ordered through your
+								business
+							</p>
+						</div>
+						<div class="info__text">
+							<p class="fs-28 fw-600 mb-0">Earn on Refills</p>
+							<p class="fs-md-18 fs-16"
+								>Every 4-week refill triggers a payout — with zero work on your
+								part.
+							</p>
+						</div>
+						<div class="info__text">
+							<p class="fs-28 fw-600 mb-0">Upsell Easily</p>
+							<p class="fs-md-18 fs-16"
+								>Offer multiple programs to one client (ex: GLP-1 + Peptides +
+								NAD+)
+							</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="info__img">
+							<img src="assets/img/earning.jpg" alt="Info" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--===|| Info Section End ||===-->
+
+		<!--===|| Businesses Section Start ||===-->
+		<div class="businesses">
+			<div class="container">
+				<h1 class="section-title__xl text-center"
+					>Why Businesses <br />
+					<span class="text-primary"> Love Wellness Plus</span>
+				</h1>
+				<div class="row mt-50">
+					<div class="col-md-6">
+						<div class="headline__text text-center">
+							<h3 class="section-title__md">Feature</h3>
+							<img src="assets/img/frame/text-underline.svg" alt="Underline" />
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="headline__text text-center">
+							<h3 class="section-title__md">You Get </h3>
+							<img src="assets/img/frame/text-underline.svg" alt="Underline" />
+						</div>
+					</div>
+				</div>
+
+				<div class="common-card mt-50">
+					<div class="common-card__list">
+						<div class="row">
+							<div class="col-5 text-center">
+								<p class="fs-28 fw-500">Medical Licensing </p>
+							</div>
+							<div class="col-2 text-center">
+								<i class="icon-brush-arrow-right common-card__list__icon"></i>
+							</div>
+							<div class="col-5 text-center">
+								<p class="fs-28 fw-500">We provide the doctors </p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-5 text-center">
+								<p class="fs-28 fw-500">Pharmacy Fulfillment </p>
+							</div>
+							<div class="col-2 text-center">
+								<i class="icon-brush-arrow-right common-card__list__icon"></i>
+							</div>
+							<div class="col-5 text-center">
+								<p class="fs-28 fw-500">Shipped to client</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-5 text-center">
+								<p class="fs-28 fw-500">Legal Compliance </p>
+							</div>
+							<div class="col-2 text-center">
+								<i class="icon-brush-arrow-right common-card__list__icon"></i>
+							</div>
+							<div class="col-5 text-center">
+								<p class="fs-28 fw-500">HIPAA + Insured</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-5 text-center">
+								<p class="fs-28 fw-500">Setup Time </p>
+							</div>
+							<div class="col-2 text-center">
+								<i class="icon-brush-arrow-right common-card__list__icon"></i>
+							</div>
+							<div class="col-5 text-center">
+								<p class="fs-28 fw-500">Less than 24 hours</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-5 text-center">
+								<p class="fs-28 fw-500">Customer Support </p>
+							</div>
+							<div class="col-2 text-center">
+								<i class="icon-brush-arrow-right common-card__list__icon"></i>
+							</div>
+							<div class="col-5 text-center">
+								<p class="fs-28 fw-500">We handle it </p>
+							</div>
+						</div>
+
+						<!-- <div class="common-card__list__item">
+							<p class="fs-28 fw-500">Pharmacy Fulfillment </p>
+							<i class="icon-brush-arrow-right"></i>
+							<p class="fs-28 fw-500">Shipped to client </p>
+						</div>
+						<div class="common-card__list__item">
+							<p class="fs-28 fw-500">Legal Compliance </p>
+							<i class="icon-brush-arrow-right"></i>
+							<p class="fs-28 fw-500">HIPAA + Insured </p>
+						</div>
+						<div class="common-card__list__item">
+							<p class="fs-28 fw-500">Setup Time</p>
+							<i class="icon-brush-arrow-right"></i>
+							<p class="fs-28 fw-500">Less than 24 hours</p>
+						</div>
+						<div class="common-card__list__item">
+							<p class="fs-28 fw-500">Customer Support </p>
+							<i class="icon-brush-arrow-right"></i>
+							<p class="fs-28 fw-500">We handle it </p>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--===|| Businesses Section End ||===-->
+
+		<!--===|| About Section Start ||===-->
+		<section class="about">
+			<div class="container">
+				<h1 class="section-title__xl text-center"
+					>About <span class="text-primary"> Wellness Plus</span></h1
+				>
+				<div class="row mt-50">
+					<div class="col-md-6">
+						<div class="info__text">
+							<p class="fs-28 fw-600 mb-0"
+								>Empowering Wellness Businesses to Offer Real Results — Without
+								the Red Tape</p
+							>
+							<p class="fs-md-18 fs-16 mt-20"
+								>At Wellness Plus, we believe cutting-edge treatments shouldn’t
+								be limited to clinics or MDs. That’s why we created a platform
+								that lets gyms, med spas, and wellness providers offer medically
+								supervised programs like GLP-1 weight loss, peptides, NAD+, and
+								men’s health support — all without hiring medical staff or
+								handling compliance headaches.
+							</p>
+							<p class="fs-md-18 fs-16 mt-20"
+								>We combine licensed providers, HIPAA-secure intake, and
+								nationwide pharmacy fulfillment into one seamless system — so
+								you can focus on your clients, not logistics.
+							</p>
+							<p class="fs-md-18 fs-16 mt-20"
+								>With experience in telehealth, health tech, and pharmacy
+								coordination, our mission is simple: Make premium wellness
+								programs accessible for any business ready to scale, simplify,
+								and serve.
+							</p>
+							<p class="fs-md-18 fs-16 mt-20"
+								>Let’s help your clients feel better, look better — and keep
+								coming back.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="info__img">
+							<img src="assets/img/about.jpg" alt="Info" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--===|| About Section End ||===-->
+
+		<!--===|| Faq Section Start||===-->
+		<section class="faq">
+			<div class="container">
+				<h1 class="section-title__xl text-center"
+					>Your Questions, <br />
+					<span class="text-primary">Our Answers</span></h1
+				>
+				<nav class="mt-50">
+					<ul class="nav nav-tabs" id="navTab" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link active"
+								id="overview-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#overview"
+								type="button"
+								role="tab"
+								aria-controls="overview"
+								aria-selected="true"
+							>
+								Program Overview
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link"
+								id="compliance-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#compliance"
+								type="button"
+								role="tab"
+								aria-controls="compliance"
+								aria-selected="false"
+							>
+								Compliance &amp; Legal
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link"
+								id="financial-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#financial"
+								type="button"
+								role="tab"
+								aria-controls="financial"
+								aria-selected="false"
+							>
+								Financial Structure &amp; Payments
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link"
+								id="medications-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#medications"
+								type="button"
+								role="tab"
+								aria-controls="medications"
+								aria-selected="false"
+							>
+								Medications &amp; Pharmacies
+							</button>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="tab-content" id="navTabContent">
+					<div
+						class="tab-pane fade show active"
+						id="overview"
+						role="tabpanel"
+						aria-labelledby="overview-tab"
+						tabindex="0"
+					>
+						<div class="faq__wrapper">
+							<Accordion />
+						</div>
+					</div>
+
+					<div
+						class="tab-pane fade"
+						id="compliance"
+						role="tabpanel"
+						aria-labelledby="compliance-tab"
+						tabindex="0"
+					>
+						<div class="faq__wrapper">
+							<Accordion />
+						</div>
+					</div>
+
+					<div
+						class="tab-pane fade"
+						id="financial"
+						role="tabpanel"
+						aria-labelledby="financial-tab"
+						tabindex="0"
+					>
+						<div class="faq__wrapper">
+							<Accordion />
+						</div>
+					</div>
+
+					<div
+						class="tab-pane fade"
+						id="medications"
+						role="tabpanel"
+						aria-labelledby="medications-tab"
+						tabindex="0"
+					>
+						<div class="faq__wrapper">
+							<Accordion />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--===|| Faq Section End ||===-->
+		<!--===|| Contact Section Start ||===-->
+		<section class="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<h1 class="section-title__lg text-light-2">Get in Touch</h1>
+						<p class="fs-md-22 fs-18 fw-500 text-light-2 mt-20"
+							>Ready to add medical weight loss to your wellness business? Our
+							team is here to help you get started.</p
+						>
+						<ul class="site__footer__contact mt-40">
+							<li>
+								<a href="mailto:hello@wellnessplusrx.com">
+									<span class="site__footer__contact--icon"
+										><i class="icon-envelope"></i></span
+									>
+									<span class="text-light-2">hello@wellnessplusrx.com</span>
+								</a></li
+							>
+							<li class="mt-4"
+								><a href="mailto:hello@wellnessplusrx.com">
+									<span class="site__footer__contact--icon"
+										><i class="icon-call"></i></span
+									>
+									<span class="text-light-2"> +1 214 432 2345</span>
+								</a></li
+							>
+						</ul>
+					</div>
+					<div class="col-md-7">
+						<ContactForm />
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--===|| Contact Section End ||===-->
 	</main>
+
 	<!--=====|| Main Section End ||=====-->
 
 	<Footer />

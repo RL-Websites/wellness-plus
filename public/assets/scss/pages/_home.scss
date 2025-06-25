@@ -18,6 +18,8 @@
   }
 }
 
+// Banner Section End
+
 .client {
   padding: 80px 0;
   background: linear-gradient(260.39deg, rgba(104, 72, 255, 0) -20.49%, #6848FF 55.93%);
@@ -37,4 +39,129 @@
     }
   }
 
+}
+
+// Client Section End
+
+.why-works {
+  padding: 120px 0;
+  background-color: $white;
+
+  &__item {
+    color: $dark;
+  }
+
+  &__num {
+    font-size: $fs-30;
+    font-weight: $fw-500;
+    color: $primary;
+    position: relative;
+    display: inline-block;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 1px;
+      background-color: $primary;
+      top: 50%;
+      transform: translateX(-50%);
+      right: -60px;
+    }
+  }
+}
+
+//WHy Works End
+
+.highlight {
+  padding: 120px 0;
+  background: rgba($primary, 0.04);
+}
+
+// Highlight Section End
+
+.treatment {
+  padding: 120px 0 0;
+  background: linear-gradient(180deg, #F7F7F7 47.43%, #FFECDB 100%);
+
+  .common-card {
+    background: linear-gradient(128.11deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 26.18%, #FFFFFF 99.22%);
+  }
+
+  &__wrapper {
+    max-width: 970px;
+    margin: 0 auto;
+  }
+
+  &__img {
+    max-width: 870px;
+    margin: 70px auto 0;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// Treatment Section End
+
+.info {
+  padding: 120px 0;
+  background: #F1F0F7;
+
+  &__img {
+    max-width: 570px;
+
+    img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+  }
+
+  &__text {
+    max-width: 470px;
+  }
+}
+
+//Info Section End
+
+.businesses {
+  padding: 120px 0;
+}
+
+//Business Section End
+
+.contact {
+  padding: 120px 0;
+  background:
+    linear-gradient(260.39deg, rgba(104, 72, 255, 0) -20.49%, #6848FF 55.93%);
+}
+
+//Contact Section End
+
+.about {
+  padding-bottom: 120px;
+}
+
+//About Section End
+
+.form-card {
+  &__label {
+    font-size: 18px;
+    font-weight: 600;
+    color: $dark;
+    margin-bottom: 10px;
+  }
+}
+
+.faq {
+  padding-bottom: 120px;
+
+  &__wrapper {
+    margin-top: 40px;
+    background-color: $light-3;
+    padding: 20px;
+    border-radius: 20px;
+  }
 }
