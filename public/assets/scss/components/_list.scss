@@ -1,0 +1,27 @@
+.list {
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    color: $white;
+    font-size: $fs-18;
+
+    &__icon {
+      background-color: $secondary;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      color: $primary;
+      border-radius: 20px;
+      margin-right: 12px;
+    }
+  }
+}

@@ -54,3 +54,9 @@ ul {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
+.page {
+	&__alt {
+		background: linear-gradient(260deg, rgba(104, 72, 255, 0.00) -20.49%, #6848FF 55.93%), #FFF;
+	}
+}

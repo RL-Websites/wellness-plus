@@ -1,0 +1,17 @@
+.contact-page {
+
+
+  &__hero {
+    padding: 120px 0 180px;
+    background: url(../img/contact.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  &__form {
+    padding-bottom: 120px;
+    margin-top: -100px;
+  }
+
+
+}
