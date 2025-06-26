@@ -4769,8 +4769,9 @@ ul li a:hover, ul li a:focus {
 
 .home-banner {
   text-align: center;
-  padding: 200px 0 100px;
+  padding: 40px 0 100px;
   position: relative;
+  margin-top: 140px;
 }
 .home-banner__content {
   max-width: 1030px;
