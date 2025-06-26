@@ -1,5 +1,7 @@
 .site {
   &__footer {
+    position: relative;
+
     &--top {
       padding: 120px 0;
       background: linear-gradient(180deg, #F7F7F7 20.97%, #FFECDB 85.95%);
@@ -86,6 +88,50 @@
         font-weight: $fw-400;
         margin: 0;
         color: $white;
+      }
+    }
+
+    &__frame {
+      &__left {
+        position: absolute;
+        left: -45px;
+        top: 128px;
+      }
+
+      &__top {
+        position: absolute;
+        left: 40%;
+        top: 54px;
+      }
+
+      &__right {
+        position: absolute;
+        right: -200px;
+        top: 54px;
+
+        img {
+          width: 440px;
+        }
+      }
+
+      &__center {
+        position: absolute;
+        top: 100px;
+        right: 30%;
+
+        img {
+          width: 50px;
+        }
+      }
+
+      &__ring {
+        position: absolute;
+        bottom: -20px;
+        right: 20%;
+
+        img {
+          width: 150px;
+        }
       }
     }
   }

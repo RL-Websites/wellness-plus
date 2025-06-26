@@ -4233,6 +4233,9 @@ ul li a:hover, ul li a:focus {
   backdrop-filter: blur(8px);
   text-align: center;
 }
+.common-card__alt {
+  background: linear-gradient(308deg, rgba(255, 255, 255, 0.2) 0%, #FFF 100%);
+}
 .common-card__list__item {
   display: flex;
   justify-content: space-around;
@@ -4411,6 +4414,9 @@ ul li a:hover, ul li a:focus {
   padding: 0;
 }
 
+.site__footer {
+  position: relative;
+}
 .site__footer--top {
   padding: 120px 0;
   background: linear-gradient(180deg, #F7F7F7 20.97%, #FFECDB 85.95%);
@@ -4481,10 +4487,45 @@ ul li a:hover, ul li a:focus {
   margin: 0;
   color: #FFFFFF;
 }
+.site__footer__frame__left {
+  position: absolute;
+  left: -45px;
+  top: 128px;
+}
+.site__footer__frame__top {
+  position: absolute;
+  left: 40%;
+  top: 54px;
+}
+.site__footer__frame__right {
+  position: absolute;
+  right: -200px;
+  top: 54px;
+}
+.site__footer__frame__right img {
+  width: 440px;
+}
+.site__footer__frame__center {
+  position: absolute;
+  top: 100px;
+  right: 30%;
+}
+.site__footer__frame__center img {
+  width: 50px;
+}
+.site__footer__frame__ring {
+  position: absolute;
+  bottom: -20px;
+  right: 20%;
+}
+.site__footer__frame__ring img {
+  width: 150px;
+}
 
 .home-banner {
   text-align: center;
   padding: 40px 0 100px;
+  position: relative;
 }
 .home-banner__content {
   max-width: 1030px;
@@ -4496,11 +4537,29 @@ ul li a:hover, ul li a:focus {
 .home-banner__action {
   margin-top: -180px;
 }
+.home-banner__frame__left {
+  position: absolute;
+  left: 65px;
+  top: 40px;
+}
+.home-banner__frame__top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home-banner__frame__right {
+  position: absolute;
+  top: 160px;
+  right: 55px;
+}
 
 .client {
   padding: 80px 0;
   background: linear-gradient(260.39deg, rgba(104, 72, 255, 0) -20.49%, #6848FF 55.93%);
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 .client__items {
   margin-top: 90px;
@@ -4512,10 +4571,80 @@ ul li a:hover, ul li a:focus {
 .client__item img {
   width: 100%;
 }
+.client__frame__left {
+  position: absolute;
+  left: -20px;
+  top: 30px;
+}
+.client__frame__right {
+  position: absolute;
+  top: -130px;
+  right: -150px;
+}
+.client__frame__bottom-left {
+  position: absolute;
+  left: -113px;
+  bottom: -135px;
+}
+
+.highlight {
+  padding: 120px 0;
+  background: rgba(104, 72, 255, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+.highlight__frame__top-left {
+  position: absolute;
+  top: 30px;
+  left: -80px;
+}
+.highlight__frame__top-left img {
+  width: 194px;
+}
+.highlight__frame__bottom-left {
+  position: absolute;
+  left: -76px;
+  bottom: -130px;
+}
+.highlight__frame__bottom-left img {
+  width: 276px;
+}
+.highlight__frame__top-right {
+  position: absolute;
+  top: 30px;
+  right: -60px;
+}
+.highlight__frame__top-right img {
+  width: 250px;
+}
+.highlight__frame__bottom-right {
+  position: absolute;
+  right: -80px;
+  bottom: -100px;
+  transform: rotate(-15deg);
+}
+.highlight__frame__bottom-right img {
+  width: 225px;
+}
+.highlight__wrapper {
+  position: relative;
+}
+.highlight__wrapper__frame__top {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
+.highlight__wrapper__frame__bottom {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+}
 
 .why-works {
   padding: 120px 0;
   background-color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
 }
 .why-works__item {
   color: #333333;
@@ -4537,15 +4666,57 @@ ul li a:hover, ul li a:focus {
   transform: translateX(-50%);
   right: -60px;
 }
-
-.highlight {
-  padding: 120px 0;
-  background: rgba(104, 72, 255, 0.04);
+.why-works__frame__left-top {
+  position: absolute;
+  top: 50px;
+  left: -80px;
+}
+.why-works__frame__left-middle {
+  position: absolute;
+  top: 50%;
+  left: -100px;
+}
+.why-works__frame__left-middle img {
+  width: 230px;
+}
+.why-works__frame__left-bottom {
+  position: absolute;
+  bottom: -150px;
+  left: -90px;
+}
+.why-works__frame__left-bottom img {
+  width: 270px;
+}
+.why-works__frame__right-top {
+  position: absolute;
+  top: 50px;
+  right: -80px;
+}
+.why-works__frame__right-top img {
+  width: 290px;
+}
+.why-works__frame__right-middle {
+  position: absolute;
+  right: -130px;
+  top: 40%;
+}
+.why-works__frame__right-middle img {
+  width: 200px;
+}
+.why-works__frame__right-bottom {
+  position: absolute;
+  right: -100px;
+  bottom: 50px;
+}
+.why-works__frame__right-bottom img {
+  width: 220px;
 }
 
 .treatment {
   padding: 120px 0 0;
   background: linear-gradient(180deg, #F7F7F7 47.43%, #FFECDB 100%);
+  position: relative;
+  overflow: hidden;
 }
 .treatment .common-card {
   background: linear-gradient(128.11deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 26.18%, #FFFFFF 99.22%);
@@ -4553,6 +4724,37 @@ ul li a:hover, ul li a:focus {
 .treatment__wrapper {
   max-width: 970px;
   margin: 0 auto;
+  position: relative;
+}
+.treatment__wrapper__frame__top {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+}
+.treatment__wrapper__frame__bottom {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+}
+.treatment__wrapper__frame__bottom img {
+  width: 100px;
+}
+.treatment__wrapper__frame__left-bottom {
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+}
+.treatment__wrapper__frame__left-bottom img {
+  width: 100px;
+  transform: rotate(-90deg);
+}
+.treatment__wrapper__frame__right-top {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+}
+.treatment__wrapper__frame__right-top img {
+  transform: rotate(90deg);
 }
 .treatment__img {
   max-width: 870px;
@@ -4561,10 +4763,44 @@ ul li a:hover, ul li a:focus {
 .treatment__img img {
   width: 100%;
 }
+.treatment__frame__left {
+  position: absolute;
+  left: -45px;
+  top: 100px;
+}
+.treatment__frame__top {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.treatment__frame__right {
+  position: absolute;
+  top: 160px;
+  right: -20px;
+}
+.treatment__frame__left-bottom {
+  position: absolute;
+  bottom: 150px;
+  left: -70px;
+}
+.treatment__frame__left-bottom img {
+  width: 180px;
+}
+.treatment__frame__right-bottom {
+  position: absolute;
+  bottom: 12 0px;
+  right: -20px;
+}
+.treatment__frame__right-bottom img {
+  transform: rotate(160deg);
+}
 
 .info {
   padding: 120px 0;
   background: #F1F0F7;
+  position: relative;
+  overflow: hidden;
 }
 .info__img {
   max-width: 570px;
@@ -4576,14 +4812,97 @@ ul li a:hover, ul li a:focus {
 .info__text {
   max-width: 470px;
 }
+.info__frame__top-left {
+  position: absolute;
+  top: 30px;
+  left: -80px;
+}
+.info__frame__top-left img {
+  width: 194px;
+}
+.info__frame__bottom-left {
+  position: absolute;
+  left: -76px;
+  bottom: -130px;
+}
+.info__frame__bottom-left img {
+  width: 276px;
+}
+.info__frame__top-right {
+  position: absolute;
+  top: 30px;
+  right: -60px;
+}
+.info__frame__top-right img {
+  width: 250px;
+}
+.info__frame__bottom-right {
+  position: absolute;
+  right: -80px;
+  bottom: -100px;
+  transform: rotate(-15deg);
+}
+.info__frame__bottom-right img {
+  width: 225px;
+}
 
 .businesses {
   padding: 120px 0;
+  position: relative;
+}
+.businesses__frame__left {
+  position: absolute;
+  top: 100px;
+  left: -80px;
+}
+.businesses__frame__left img {
+  width: 260px;
+}
+.businesses__frame__top {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.businesses__frame__top img {
+  width: 106px;
+}
+.businesses__frame__right {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+}
+.businesses__frame__right img {
+  width: 106px;
+  transform: rotate(90deg);
+}
+.businesses__frame__center {
+  position: absolute;
+  top: 60%;
+  left: -30px;
+}
+.businesses__frame__center img {
+  width: 106px;
+  transform: rotate(90deg);
+}
+.businesses__frame__wrapper {
+  position: relative;
 }
 
 .contact {
   padding: 120px 0;
   background: linear-gradient(260.39deg, rgba(104, 72, 255, 0) -20.49%, #6848FF 55.93%);
+  position: relative;
+}
+.contact__frame__left {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+}
+.contact__frame__middle {
+  position: absolute;
+  top: 40%;
+  left: -20px;
 }
 
 .about {

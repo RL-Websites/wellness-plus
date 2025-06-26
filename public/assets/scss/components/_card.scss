@@ -6,13 +6,15 @@
   backdrop-filter: blur(8px);
   text-align: center;
 
+  &__alt {
+    background: linear-gradient(308deg, rgba(255, 255, 255, 0.20) 0%, #FFF 100%);
+  }
+
   &__list {
     &__item {
       display: flex;
       justify-content: space-around;
       align-items: center;
-
-
 
       p {
         margin: 0;

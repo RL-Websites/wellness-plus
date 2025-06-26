@@ -1,6 +1,7 @@
 .home-banner {
   text-align: center;
   padding: 40px 0 100px;
+  position: relative;
 
   &__content {
     max-width: 1030px;
@@ -16,6 +17,27 @@
   &__action {
     margin-top: -180px;
   }
+
+  &__frame {
+    &__left {
+      position: absolute;
+      left: 65px;
+      top: 40px;
+    }
+
+    &__top {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__right {
+      position: absolute;
+      top: 160px;
+      right: 55px;
+    }
+  }
 }
 
 // Banner Section End
@@ -24,6 +46,8 @@
   padding: 80px 0;
   background: linear-gradient(260.39deg, rgba(104, 72, 255, 0) -20.49%, #6848FF 55.93%);
   text-align: center;
+  position: relative;
+  overflow: hidden;
 
   &__items {
     margin-top: 90px;
@@ -39,13 +63,107 @@
     }
   }
 
+  &__frame {
+    &__left {
+      position: absolute;
+      left: -20px;
+      top: 30px;
+    }
+
+    &__right {
+      position: absolute;
+      top: -130px;
+      right: -150px;
+    }
+
+    &__bottom-left {
+      position: absolute;
+      left: -113px;
+      bottom: -135px;
+    }
+  }
+
 }
 
 // Client Section End
 
+
+.highlight {
+  padding: 120px 0;
+  background: rgba($primary, 0.04);
+  position: relative;
+  overflow: hidden;
+
+  &__frame {
+    &__top-left {
+      position: absolute;
+      top: 30px;
+      left: -80px;
+
+      img {
+        width: 194px;
+      }
+    }
+
+    &__bottom-left {
+      position: absolute;
+      left: -76px;
+      bottom: -130px;
+
+      img {
+        width: 276px;
+      }
+    }
+
+    &__top-right {
+      position: absolute;
+      top: 30px;
+      right: -60px;
+
+      img {
+        width: 250px;
+      }
+    }
+
+    &__bottom-right {
+      position: absolute;
+      right: -80px;
+      bottom: -100px;
+      transform: rotate(-15deg);
+
+      img {
+        width: 225px;
+      }
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+
+    &__frame {
+
+      &__top {
+        position: absolute;
+        top: -50px;
+        left: -50px;
+      }
+
+      &__bottom {
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+      }
+    }
+  }
+}
+
+// Highlight Section End
+
 .why-works {
   padding: 120px 0;
   background-color: $white;
+  position: relative;
+  overflow: hidden;
 
   &__item {
     color: $dark;
@@ -69,20 +187,74 @@
       right: -60px;
     }
   }
+
+  &__frame {
+    &__left-top {
+      position: absolute;
+      top: 50px;
+      left: -80px;
+    }
+
+    &__left-middle {
+      position: absolute;
+      top: 50%;
+      left: -100px;
+
+      img {
+        width: 230px;
+      }
+    }
+
+    &__left-bottom {
+      position: absolute;
+      bottom: -150px;
+      left: -90px;
+
+      img {
+        width: 270px;
+      }
+    }
+
+    &__right-top {
+      position: absolute;
+      top: 50px;
+      right: -80px;
+
+      img {
+        width: 290px;
+      }
+    }
+
+    &__right-middle {
+      position: absolute;
+      right: -130px;
+      top: 40%;
+
+      img {
+        width: 200px;
+      }
+    }
+
+    &__right-bottom {
+      position: absolute;
+      right: -100px;
+      bottom: 50px;
+
+      img {
+        width: 220px;
+      }
+    }
+  }
 }
 
 //WHy Works End
 
-.highlight {
-  padding: 120px 0;
-  background: rgba($primary, 0.04);
-}
-
-// Highlight Section End
 
 .treatment {
   padding: 120px 0 0;
   background: linear-gradient(180deg, #F7F7F7 47.43%, #FFECDB 100%);
+  position: relative;
+  overflow: hidden;
 
   .common-card {
     background: linear-gradient(128.11deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 26.18%, #FFFFFF 99.22%);
@@ -91,6 +263,48 @@
   &__wrapper {
     max-width: 970px;
     margin: 0 auto;
+    position: relative;
+
+    &__frame {
+
+      &__top {
+        position: absolute;
+        top: -50px;
+        left: -50px;
+      }
+
+      &__bottom {
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+
+        img {
+          width: 100px;
+
+        }
+      }
+
+      &__left-bottom {
+        position: absolute;
+        bottom: -50px;
+        left: -50px;
+
+        img {
+          width: 100px;
+          transform: rotate(-90deg);
+        }
+      }
+
+      &__right-top {
+        position: absolute;
+        top: -50px;
+        right: -50px;
+
+        img {
+          transform: rotate(90deg);
+        }
+      }
+    }
   }
 
   &__img {
@@ -101,6 +315,47 @@
       width: 100%;
     }
   }
+
+  &__frame {
+    &__left {
+      position: absolute;
+      left: -45px;
+      top: 100px;
+    }
+
+    &__top {
+      position: absolute;
+      top: 60px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__right {
+      position: absolute;
+      top: 160px;
+      right: -20px;
+    }
+
+    &__left-bottom {
+      position: absolute;
+      bottom: 150px;
+      left: -70px;
+
+      img {
+        width: 180px;
+      }
+    }
+
+    &__right-bottom {
+      position: absolute;
+      bottom: 12 0px;
+      right: -20px;
+
+      img {
+        transform: rotate(160deg);
+      }
+    }
+  }
 }
 
 // Treatment Section End
@@ -108,6 +363,8 @@
 .info {
   padding: 120px 0;
   background: #F1F0F7;
+  position: relative;
+  overflow: hidden;
 
   &__img {
     max-width: 570px;
@@ -116,11 +373,53 @@
       width: 100%;
       border-radius: 20px;
     }
-
   }
 
   &__text {
     max-width: 470px;
+  }
+
+  &__frame {
+    &__top-left {
+      position: absolute;
+      top: 30px;
+      left: -80px;
+
+      img {
+        width: 194px;
+      }
+    }
+
+    &__bottom-left {
+      position: absolute;
+      left: -76px;
+      bottom: -130px;
+
+      img {
+        width: 276px;
+      }
+    }
+
+    &__top-right {
+      position: absolute;
+      top: 30px;
+      right: -60px;
+
+      img {
+        width: 250px;
+      }
+    }
+
+    &__bottom-right {
+      position: absolute;
+      right: -80px;
+      bottom: -100px;
+      transform: rotate(-15deg);
+
+      img {
+        width: 225px;
+      }
+    }
   }
 }
 
@@ -128,6 +427,57 @@
 
 .businesses {
   padding: 120px 0;
+  position: relative;
+
+  &__frame {
+    &__left {
+      position: absolute;
+      top: 100px;
+      left: -80px;
+
+      img {
+        width: 260px;
+      }
+    }
+
+    &__top {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      img {
+        width: 106px;
+      }
+    }
+
+    &__right {
+      position: absolute;
+      top: 50px;
+      right: 100px;
+
+      img {
+        width: 106px;
+        transform: rotate(90deg);
+      }
+    }
+
+    &__center {
+      position: absolute;
+      top: 60%;
+      left: -30px;
+
+
+      img {
+        width: 106px;
+        transform: rotate(90deg);
+      }
+    }
+
+    &__wrapper {
+      position: relative;
+    }
+  }
 }
 
 //Business Section End
@@ -136,6 +486,21 @@
   padding: 120px 0;
   background:
     linear-gradient(260.39deg, rgba(104, 72, 255, 0) -20.49%, #6848FF 55.93%);
+  position: relative;
+
+  &__frame {
+    &__left {
+      position: absolute;
+      top: 30px;
+      left: -20px;
+    }
+
+    &__middle {
+      position: absolute;
+      top: 40%;
+      left: -20px;
+    }
+  }
 }
 
 //Contact Section End
