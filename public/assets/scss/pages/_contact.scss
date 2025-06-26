@@ -1,5 +1,5 @@
 .contact-page {
-
+  position: relative;
 
   &__hero {
     padding: 120px 0 180px;
@@ -13,5 +13,23 @@
     margin-top: -100px;
   }
 
+  &__frame {
+    &__left {
+      position: absolute;
+      top: 50%;
+      left: -50px;
+    }
 
+    &__right {
+      position: absolute;
+      top: -20px;
+      right: -70px;
+    }
+
+    &__top {
+      position: absolute;
+      top: 250px;
+      left: 55%;
+    }
+  }
 }

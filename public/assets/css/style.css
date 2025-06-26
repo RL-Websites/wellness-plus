@@ -4926,6 +4926,9 @@ ul li a:hover, ul li a:focus {
   border-radius: 20px;
 }
 
+.contact-page {
+  position: relative;
+}
 .contact-page__hero {
   padding: 120px 0 180px;
   background: url(../img/contact.png);
@@ -4935,6 +4938,21 @@ ul li a:hover, ul li a:focus {
 .contact-page__form {
   padding-bottom: 120px;
   margin-top: -100px;
+}
+.contact-page__frame__left {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+}
+.contact-page__frame__right {
+  position: absolute;
+  top: -20px;
+  right: -70px;
+}
+.contact-page__frame__top {
+  position: absolute;
+  top: 250px;
+  left: 55%;
 }
 
 /*# sourceMappingURL=style.css.map */
