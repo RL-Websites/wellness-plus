@@ -5176,7 +5176,7 @@ ul li a:hover, ul li a:focus {
   position: relative;
 }
 .contact-page__hero {
-  padding: 120px 0 180px;
+  padding: 180px 0 180px;
   background: url(../img/contact.png);
   background-repeat: no-repeat;
   background-position: bottom right;
