@@ -1,6 +1,7 @@
 .site {
   &__footer {
     position: relative;
+    overflow: hidden;
 
     &--top {
       padding: 120px 0;
@@ -109,6 +110,7 @@
         right: -200px;
         top: 54px;
 
+
         img {
           width: 440px;
         }
@@ -133,6 +135,14 @@
           width: 150px;
         }
       }
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      align-items: end;
     }
   }
 }
