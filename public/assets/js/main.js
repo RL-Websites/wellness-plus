@@ -9,10 +9,10 @@ $(document).ready(function () {
 		$("body").toggleClass("header-open");
 
 		var icon = $(this).find("i");
-		if (icon.hasClass("icon-hamburger-menu")) {
-			icon.removeClass("icon-hamburger-menu").addClass("icon-cross");
+		if (icon.hasClass("icon-hamburger")) {
+			icon.removeClass("icon-hamburger").addClass("icon-cross");
 		} else {
-			icon.removeClass("icon-cross").addClass("icon-hamburger-menu");
+			icon.removeClass("icon-cross").addClass("icon-hamburger");
 		}
 	});
 
