@@ -4326,7 +4326,7 @@ ul li a:hover, ul li a:focus {
 .site__menu__list {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 40px;
   margin-bottom: 0;
 }
 .site__menu__list--dropdown li a::after {
