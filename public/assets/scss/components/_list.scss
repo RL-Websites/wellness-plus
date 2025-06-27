@@ -3,6 +3,14 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    &--text {
+
+      list-style: disc;
+      margin-left: 20px;
+      font-size: $fs-18;
+
+    }
   }
 
   &__item {

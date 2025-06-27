@@ -1,7 +1,13 @@
 ---
 import AccordionCompliance from "../components/AccordionCompliance.astro";
+import AccordionData from "../components/AccordionData.astro";
 import AccordionFinancial from "../components/AccordionFinancial.astro";
+import AccordionLaunch from "../components/AccordionLaunch.astro";
+import AccordionMedication from "../components/AccordionMedication.astro";
+import AccordionPatient from "../components/AccordionPatient.astro";
 import AccordionProgram from "../components/AccordionProgram.astro";
+import AccordionRevenue from "../components/AccordionRevenue.astro";
+
 import ContactForm from "../components/ContactForm.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
@@ -601,7 +607,11 @@ import Layout from "../layouts/Layout.astro";
 					<span class="text-primary">Our Answers</span></h1
 				>
 				<nav class="mt-50">
-					<ul class="nav nav-tabs" id="navTab" role="tablist">
+					<ul
+						class="nav nav-tabs justify-content-center"
+						id="navTab"
+						role="tablist"
+					>
 						<li class="nav-item" role="presentation">
 							<button
 								class="nav-link active"
@@ -658,6 +668,62 @@ import Layout from "../layouts/Layout.astro";
 								Medications &amp; Pharmacies
 							</button>
 						</li>
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link"
+								id="patientManagement-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#patientManagement"
+								type="button"
+								role="tab"
+								aria-controls="patientManagement"
+								aria-selected="false"
+							>
+								Patient Management & Clinical Care
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link"
+								id="revenue-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#revenue"
+								type="button"
+								role="tab"
+								aria-controls="revenue"
+								aria-selected="false"
+							>
+								Revenue & Profitability
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link"
+								id="launch-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#launch"
+								type="button"
+								role="tab"
+								aria-controls="launch"
+								aria-selected="false"
+							>
+								Launch & Operations
+							</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button
+								class="nav-link"
+								id="data-tab"
+								data-bs-toggle="tab"
+								data-bs-target="#data"
+								type="button"
+								role="tab"
+								aria-controls="data"
+								aria-selected="false"
+							>
+								Data Security & Compliance
+							</button>
+						</li>
 					</ul>
 				</nav>
 
@@ -706,7 +772,54 @@ import Layout from "../layouts/Layout.astro";
 						tabindex="0"
 					>
 						<div class="faq__wrapper">
-							<!-- <Accordion /> -->
+							<AccordionMedication />
+						</div>
+					</div>
+
+					<div
+						class="tab-pane fade"
+						id="patientManagement"
+						role="tabpanel"
+						aria-labelledby="patientManagement-tab"
+						tabindex="0"
+					>
+						<div class="faq__wrapper">
+							<AccordionPatient />
+						</div>
+					</div>
+
+					<div
+						class="tab-pane fade"
+						id="revenue"
+						role="tabpanel"
+						aria-labelledby="revenue-tab"
+						tabindex="0"
+					>
+						<div class="faq__wrapper">
+							<AccordionRevenue />
+						</div>
+					</div>
+
+					<div
+						class="tab-pane fade"
+						id="launch"
+						role="tabpanel"
+						aria-labelledby="launch-tab"
+						tabindex="0"
+					>
+						<div class="faq__wrapper">
+							<AccordionLaunch />
+						</div>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="data"
+						role="tabpanel"
+						aria-labelledby="data-tab"
+						tabindex="0"
+					>
+						<div class="faq__wrapper">
+							<AccordionData />
 						</div>
 					</div>
 				</div>
