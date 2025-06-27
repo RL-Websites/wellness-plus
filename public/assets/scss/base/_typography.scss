@@ -17,6 +17,7 @@ p {
 		font-size: $fs-60;
 		line-height: 1.3;
 		font-weight: $fw-700;
+
 	}
 
 	&__lg {
@@ -35,5 +36,29 @@ p {
 		font-size: $fs-32;
 		line-height: 1.2;
 		font-weight: $fw-600;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.section-title {
+		&__xl {
+			font-size: $fs-24;
+
+			&--mob {
+				font-size: $fs-30;
+			}
+		}
+
+		&__lg {
+			font-size: $fs-30;
+		}
+
+		&__md {
+			font-size: $fs-20;
+		}
+
+		&__sm {
+			font-size: $fs-20;
+		}
 	}
 }

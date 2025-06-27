@@ -3,6 +3,7 @@
   padding: 40px 0 100px;
   position: relative;
   margin-top: 140px;
+  overflow: hidden;
 
   &__content {
     max-width: 1030px;
@@ -165,6 +166,10 @@
   background-color: $white;
   position: relative;
   overflow: hidden;
+
+  &__items {
+    margin-top: 100px;
+  }
 
   &__item {
     color: $dark;
@@ -378,6 +383,22 @@
 
   &__text {
     max-width: 470px;
+
+
+    &__highlight {
+      position: relative;
+      padding-left: 20px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        height: 85%;
+        width: 3px;
+        background: $primary;
+        top: 7%;
+        left: 0;
+      }
+    }
   }
 
   &__frame {
@@ -529,5 +550,333 @@
     background-color: $light-3;
     padding: 20px;
     border-radius: 20px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .home-banner {
+    margin-top: 100px;
+    padding-bottom: 60px;
+
+    &__action {
+      margin-top: -150px;
+    }
+
+    &__content {
+      margin-bottom: 0;
+    }
+
+    &__frame {
+      &__top {
+        left: unset;
+        transform: unset;
+        right: -60px;
+      }
+
+      &__left {
+        left: -20px;
+        top: 40px;
+
+        img {
+          width: 60px;
+        }
+      }
+
+      &__right {
+        position: absolute;
+        top: 200px;
+        right: unset;
+        left: -40px;
+
+        img {
+          width: 80px;
+        }
+      }
+    }
+  }
+
+  .client {
+    padding: 60px 0;
+  }
+
+  .highlight {
+    padding: 60px 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home-banner {
+    margin-top: 50px;
+    padding-bottom: 50px;
+
+    &__action {
+      margin-top: 0;
+    }
+  }
+
+  .client {
+    padding: 50px 0;
+
+    &__items {
+      margin-top: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &__item {
+      img {
+        height: 32px;
+        width: unset;
+      }
+    }
+
+    &__frame {
+      &__left {
+        left: -50px;
+        top: 0;
+      }
+
+      &__bottom-left {
+        left: -40px;
+        bottom: -25px;
+
+        img {
+          width: 100px;
+        }
+      }
+
+      &__right {
+        position: absolute;
+        top: -30px;
+        right: -45px;
+
+        img {
+          width: 106px;
+        }
+      }
+    }
+  }
+
+  .highlight {
+    padding: 50px 0;
+
+    &__frame {
+      &__top-left {
+        left: -30px;
+        top: 10px;
+
+        img {
+          width: 94px;
+        }
+      }
+
+      &__top-right {
+        top: 10px;
+        right: -30px;
+
+        img {
+          width: 94px;
+        }
+      }
+
+      &__bottom-left {
+        left: -20px;
+        bottom: 0;
+
+        img {
+          width: 94px;
+        }
+      }
+
+      &__bottom-right {
+        display: none;
+      }
+    }
+
+    &__wrapper {
+      &__frame {
+        &__top {
+          top: -15px;
+          left: -15px;
+
+          img {
+            width: 50px;
+          }
+        }
+
+        &__bottom {
+          bottom: -15px;
+          right: -15px;
+
+          img {
+            width: 50px;
+          }
+        }
+
+      }
+    }
+  }
+
+  .why-works {
+    padding: 50px 0;
+
+    &__frame {
+      &__left-top {
+        display: none;
+      }
+
+      &__right-top {
+        top: 5px;
+        right: -10px;
+
+        img {
+          width: 44px;
+        }
+      }
+
+      &__left-middle {
+        display: none;
+      }
+
+      &__right-middle {
+        display: none;
+      }
+
+      &__right-bottom {
+        display: none;
+      }
+
+      &__left-bottom {
+        display: none;
+      }
+    }
+
+    &__items {
+      margin-top: 30px;
+    }
+
+    &__item {
+      text-align: center;
+    }
+
+    &__num {
+      font-size: $fs-16;
+
+      &::after {
+        width: 20px;
+        right: -40px;
+      }
+    }
+  }
+
+  .treatment {
+    padding: 50px 0 0;
+
+    &__frame {
+      &__left {
+        position: absolute;
+        left: -45px;
+        top: 0;
+      }
+
+      &__left-bottom {
+        display: none;
+      }
+    }
+
+    &__wrapper {
+      &__frame {
+        &__top {
+          top: -10px;
+          left: -20px;
+
+          img {
+            width: 50px;
+          }
+        }
+
+        &__right-top {
+          top: -10px;
+          right: -20px;
+
+          img {
+            width: 50px;
+          }
+        }
+
+        &__left-bottom {
+          bottom: -10px;
+          left: -20px;
+
+          img {
+            width: 50px;
+          }
+        }
+
+        &__bottom {
+          bottom: -10px;
+          right: -20px;
+
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+
+    &__img {
+      margin-top: 30px;
+    }
+  }
+
+  .info {
+    padding: 50px 0;
+
+    &__text {
+      max-width: unset;
+      position: relative;
+
+
+    }
+
+    &__img {
+      margin: 20px auto 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .home-banner {
+    &__frame {
+      &__right {
+        position: absolute;
+        top: uset;
+        right: unset;
+        left: -40px;
+        bottom: 30px;
+      }
+    }
+  }
+
+  .why-works {
+    &__num {
+      font-size: 12px;
+    }
+  }
+
+  .treatment {
+    &__wrapper {
+      &__frame {
+        &__right-top {
+          display: none;
+        }
+
+        &__left-bottom {
+          display: none;
+        }
+      }
+    }
   }
 }

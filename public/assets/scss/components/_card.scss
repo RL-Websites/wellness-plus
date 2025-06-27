@@ -29,3 +29,19 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .common-card {
+    &__alt {
+      &--margin {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .common-card {
+    padding: 20px;
+  }
+}
