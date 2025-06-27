@@ -4298,7 +4298,7 @@ ul li a:hover, ul li a:focus {
   top: 0;
   width: 100%;
   z-index: 999;
-  background-color: #F7F7F7;
+  background-color: transparent;
 }
 .site__header.sticky {
   position: fixed;
@@ -5359,6 +5359,30 @@ ul li a:hover, ul li a:focus {
   position: absolute;
   top: 250px;
   left: 55%;
+}
+
+.privacy-policy {
+  padding: 40px 0 100px;
+  position: relative;
+  margin-top: 140px;
+  background: url(../img/site-bg.png) center 940px/2000px repeat-y;
+}
+.privacy-policy__items__list {
+  list-style: disc;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.terms-conditions {
+  padding: 40px 0 100px;
+  position: relative;
+  margin-top: 140px;
+  background: url(../img/site-bg.png) center 940px/2000px repeat-y;
+}
+.terms-conditions__items__list {
+  list-style: disc;
+  margin-left: 20px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
