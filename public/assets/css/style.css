@@ -4298,7 +4298,7 @@ ul li a:hover, ul li a:focus {
   top: 0;
   width: 100%;
   z-index: 999;
-  background-color: transparent;
+  background-color: #F7F7F7;
 }
 .site__header.sticky {
   position: fixed;
