@@ -39,6 +39,30 @@ p {
 	}
 }
 
+@media only screen and (max-width: 992px) {
+	.section-title {
+		&__xl {
+			font-size: $fs-40;
+
+			&--mob {
+				font-size: $fs-50;
+			}
+		}
+
+		&__lg {
+			font-size: $fs-40;
+		}
+
+		&__md {
+			font-size: $fs-30;
+		}
+
+		&__sm {
+			font-size: $fs-24;
+		}
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	.section-title {
 		&__xl {

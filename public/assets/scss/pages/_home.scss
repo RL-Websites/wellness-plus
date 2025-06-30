@@ -523,6 +523,30 @@
       left: -20px;
     }
   }
+
+  &__social {
+    li {
+      a {
+        color: $dark;
+        font-size: $fs-20;
+        font-weight: $fw-600;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &--icon {
+      width: 40px;
+      height: 40px;
+      background-color: $secondary;
+      color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
 }
 
 //Contact Section End
@@ -602,6 +626,25 @@
   .highlight {
     padding: 60px 0;
   }
+
+  .contact {
+    padding: 60px 0;
+
+    &__social {
+      li {
+        a {
+          font-size: $fs-16;
+        }
+      }
+
+      &--icon {
+        width: 30px;
+        height: 30px;
+        font-size: $fs-16;
+      }
+    }
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -844,6 +887,10 @@
     &__img {
       margin: 20px auto 0;
     }
+  }
+
+  .contact {
+    padding: 50px 0;
   }
 }
 
