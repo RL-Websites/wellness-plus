@@ -4960,6 +4960,9 @@ ul li a:hover, ul li a:focus {
     gap: 0;
     padding-bottom: 50px;
   }
+  .site__footer__frame {
+    display: none;
+  }
 }
 .home-banner {
   text-align: center;

@@ -250,6 +250,10 @@
         gap: 0;
         padding-bottom: 50px;
       }
+
+      &__frame {
+        display: none;
+      }
     }
   }
 }
