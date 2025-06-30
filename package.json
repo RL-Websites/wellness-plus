@@ -4,7 +4,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "npm-run-all --parallel astro:dev watch",
-		"astro:dev": "astro dev --port 2500 --watch",
+		"astro:dev": "astro dev --port 2800 --watch",
 		"watch": "sass --watch public/assets/scss/styles.scss:public/assets/css/style.css",
 		"build": "astro build",
 		"preview": "astro preview",
