@@ -4204,6 +4204,12 @@ ul li a:hover, ul li a:focus {
   top: -3px;
   left: 4px;
 }
+.form-card__label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 10px;
+}
 
 .form-select {
   font-size: 18px;
@@ -4231,6 +4237,9 @@ ul li a:hover, ul li a:focus {
   .form-card__label {
     font-size: 16px !important;
   }
+  .form-card__main {
+    margin-top: -59px;
+  }
 }
 .form-control {
   background-color: #FFFFFF;
@@ -4248,6 +4257,16 @@ ul li a:hover, ul li a:focus {
   background-color: #FFFFFF;
 }
 
+@media only screen and (max-width: 768px) {
+  .form-control {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .form-select {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
 .nav-tabs {
   border-bottom: 2px solid rgba(104, 72, 255, 0.2);
 }
@@ -4291,7 +4310,7 @@ ul li a:hover, ul li a:focus {
   position: absolute;
   top: 0;
   right: 0;
-  width: 150px;
+  width: 100px;
   height: 100%;
   background: linear-gradient(90deg, rgba(247, 247, 247, 0) 0%, #F7F7F7 81%);
 }
@@ -4368,6 +4387,9 @@ ul li a:hover, ul li a:focus {
   }
   .scroll-arrow {
     font-size: 18px;
+  }
+  .tab-scroll-container::after {
+    width: 50px;
   }
 }
 .accordion {
@@ -4464,6 +4486,26 @@ ul li a:hover, ul li a:focus {
   margin-right: 12px;
 }
 
+@media only screen and (max-width: 768px) {
+  .list__item {
+    font-size: 16px;
+  }
+  .list__item__icon {
+    font-size: 8px;
+    line-height: 1;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .list__item {
+    font-size: 16px;
+  }
+  .list__item__icon {
+    font-size: 8px;
+    line-height: 1;
+    height: 20px;
+    width: 20px;
+  }
+}
 .site__header {
   padding: 40px 0;
   transition: 0.3s;
@@ -5342,13 +5384,6 @@ ul li a:hover, ul li a:focus {
   padding-bottom: 120px;
 }
 
-.form-card__label {
-  font-size: 18px;
-  font-weight: 600;
-  color: #333333;
-  margin-bottom: 10px;
-}
-
 .faq {
   padding-bottom: 120px;
 }
@@ -5645,6 +5680,7 @@ ul li a:hover, ul li a:focus {
   background: url(../img/contact.png);
   background-repeat: no-repeat;
   background-position: bottom right;
+  overflow: hidden;
 }
 .contact-page__form {
   padding-bottom: 120px;
@@ -5666,6 +5702,20 @@ ul li a:hover, ul li a:focus {
   left: 55%;
 }
 
+@media only screen and (max-width: 768px) {
+  .contact-page__hero {
+    margin-top: 50px;
+    padding: 50px 0 250px;
+    background-size: 200px;
+  }
+  .contact-page__form {
+    padding-bottom: 50px;
+    margin-top: 0;
+  }
+  .contact-page__frame {
+    display: none;
+  }
+}
 .privacy-policy {
   padding: 40px 0 100px;
   position: relative;

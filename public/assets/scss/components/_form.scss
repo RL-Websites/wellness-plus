@@ -15,6 +15,13 @@
     top: -3px;
     left: 4px;
   }
+
+  &__label {
+    font-size: 18px;
+    font-weight: 600;
+    color: $dark;
+    margin-bottom: 10px;
+  }
 }
 
 .form {
@@ -46,6 +53,10 @@
 
     &__label {
       font-size: $fs-16 !important;
+    }
+
+    &__main {
+      margin-top: -59px;
     }
   }
 }
