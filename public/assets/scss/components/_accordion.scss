@@ -21,7 +21,6 @@
   }
 
   &-button {
-
     box-shadow: none !important;
     background-color: transparent !important;
     font-size: $fs-22;
@@ -29,6 +28,21 @@
     color: $dark !important;
     padding: 32px 0 !important;
 
+    &.collapsed {
+      &::after {
+        background-image: none;
+        content: '\e908';
+        font-family: "icomoon";
+      }
+    }
+
+    &:not(.collapsed) {
+      &::after {
+        background-image: none;
+        content: '\e907';
+        font-family: "icomoon";
+      }
+    }
   }
 
   &-header {
@@ -38,6 +52,35 @@
   &-body {
     padding: 0 0 30px !important;
   }
+}
 
+@media only screen and (max-width: 992px) {
+  .accordion {
+    &__wrapper {
+      padding: 0 10px;
+      border-radius: 10px;
+    }
 
+    &-button {
+      font-size: $fs-16;
+      padding: 10px 0 !important;
+    }
+
+    &-body {
+      font-size: $fs-14;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .accordion {
+
+    &-button {
+      font-size: $fs-14;
+    }
+
+    &-body {
+      font-size: $fs-12;
+    }
+  }
 }

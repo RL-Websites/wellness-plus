@@ -55,4 +55,11 @@ $(document).ready(function () {
 	// 			const modalDialog = $(this).find(".modal-dialog");
 	// 			modalDialog.removeClass("animate-bounceIn");
 	// 		});
+
+	const scrollBtn = document.getElementById("scrollRightBtn");
+	const tabContainer = document.querySelector(".custom-tabs");
+
+	scrollBtn.addEventListener("click", () => {
+		tabContainer.scrollBy({ left: 200, behavior: "smooth" });
+	});
 });

@@ -1,7 +1,6 @@
 .nav {
   &-tabs {
     border-bottom: 2px solid rgba(104, 72, 255, 0.20);
-
   }
 
   &-link {
@@ -36,5 +35,109 @@
     &:hover {
       color: $dark;
     }
+  }
+}
+
+.tab-scroll-container {
+  position: relative;
+  border-bottom: 1px solid #eae6fd;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(247, 247, 247, 0) 0%, #F7F7F7 81%);
+  }
+}
+
+.custom-tabs {
+  margin-bottom: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: relative;
+
+
+}
+
+.custom-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-tabs .nav-link {
+  white-space: nowrap;
+  position: relative;
+}
+
+.custom-tabs .nav-link.active {
+  color: #000;
+  font-weight: 600;
+}
+
+.scroll-arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #7b61ff;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 992px) {
+  .nav {
+
+    &-tabs {
+      gap: 15px;
+    }
+
+    &-link {
+      padding: 15px 0;
+      font-size: $fs-16;
+
+      &.active {
+        background-color: transparent !important;
+        outline: 0 !important;
+        box-shadow: none;
+        color: $dark;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 6px;
+          border-radius: 6px;
+          background-color: $primary;
+          bottom: -3px;
+          left: 0;
+        }
+      }
+
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+
+  .scroll-arrow {
+    font-size: $fs-18;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    &-link {
+      padding: 10px 0;
+    }
+  }
+
+  .scroll-arrow {
+    font-size: $fs-18;
   }
 }

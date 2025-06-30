@@ -627,6 +627,14 @@
     padding: 60px 0;
   }
 
+  .businesses {
+    padding: 60px 0;
+  }
+
+  .about {
+    padding-bottom: 60px;
+  }
+
   .contact {
     padding: 60px 0;
 
@@ -642,6 +650,16 @@
         height: 30px;
         font-size: $fs-16;
       }
+    }
+  }
+
+  .faq {
+    padding-bottom: 60px;
+
+    &__wrapper {
+      margin-top: 30px;
+      padding: 8px;
+      border-radius: 10px;
     }
   }
 
@@ -880,6 +898,15 @@
     &__text {
       max-width: unset;
       position: relative;
+      text-align: center;
+
+      &__highlight {
+        padding-left: 0;
+
+        &::after {
+          display: none;
+        }
+      }
 
 
     }
@@ -889,8 +916,29 @@
     }
   }
 
+  .about {
+    padding-bottom: 50px;
+  }
+
+  .businesses {
+    padding: 50px 0;
+
+    .headline {
+      &__text {
+        img {
+          max-width: 80px;
+          margin-top: -20px;
+        }
+      }
+    }
+  }
+
   .contact {
     padding: 50px 0;
+  }
+
+  .faq {
+    padding-bottom: 50px;
   }
 }
 
@@ -926,4 +974,5 @@
       }
     }
   }
+
 }
