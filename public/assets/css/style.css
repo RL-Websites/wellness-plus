@@ -5677,6 +5677,7 @@ ul li a:hover, ul li a:focus {
 }
 .contact-page {
   position: relative;
+  overflow: hidden;
 }
 .contact-page__hero {
   padding: 180px 0 180px;
@@ -5688,6 +5689,7 @@ ul li a:hover, ul li a:focus {
 .contact-page__form {
   padding-bottom: 120px;
   margin-top: -100px;
+  overflow: hidden;
 }
 .contact-page__frame__left {
   position: absolute;
